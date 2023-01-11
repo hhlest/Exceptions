@@ -2,12 +2,12 @@
 public class Human {
     private String name;
     private String lastName;
-    private String gender;
+    private Enum gender;
 
     public Human() {
     }
 
-    public Human(String name, String lastName, String gender) {
+    public Human(String name, String lastName, Enum gender) {
         this.name = name;
         this.lastName = lastName;
         this.gender = gender;
@@ -29,11 +29,11 @@ public class Human {
         this.lastName = lastName;
     }
 
-    public String getGender() {
+    public Enum getGender() {
         return gender;
     }
 
-    public void setGender(String gender) {
+    public void setGender(Enum gender) {
         this.gender = gender;
     }
 
@@ -42,7 +42,7 @@ public class Human {
         return "Human{" +
                 "name='" + name + '\'' +
                 ", lastName='" + lastName + '\'' +
-                ", gender='" + gender + '\'' +
+                ", gender=" + gender +
                 '}';
     }
 }

@@ -1,7 +1,7 @@
 
 public class Group {
     private String groupName;
-    private final Student[] students = new Student[2];
+    private final Student[] students = new Student[10];
 
     public Group() {
     }

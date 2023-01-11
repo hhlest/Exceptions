@@ -4,14 +4,14 @@ public class Main {
 
         Group g1 = new Group("Group-101");
 
-        Student s1 = new Student("Lesia", "Ukrainka", "Female", 1011, g1.getGroupName());
-        Student s2 = new Student("Taras", "Shevchenko", "Male", 2022, g1.getGroupName());
-        Student s3 = new Student("Ivan", "Franko", "Male", 3022, g1.getGroupName());
+        Student s1 = new Student("Lesia", "Ukrainka", Gender.FEMALE, 1011, g1.getGroupName());
+        Student s2 = new Student("Taras", "Shevchenko", Gender.MALE, 2022, g1.getGroupName());
+        Student s3 = new Student("Ivan", "Franko", Gender.MALE, 3022, g1.getGroupName());
 
         try {
             g1.addStudent(s1);
             g1.addStudent(s2);
-            g1.addStudent(s3); // GroupOverflowException check.
+            g1.addStudent(s3);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -23,9 +23,7 @@ public class Main {
             e.printStackTrace();
         }
         System.out.println(g1);
-
-        System.out.println(g1.removeStudentByID(1012)); // False ID doesn't exists
-
+        System.out.println(g1.removeStudentByID(1011)); // False if ID doesn't exist
         System.out.println(g1);
     }
 }

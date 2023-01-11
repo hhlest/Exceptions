@@ -8,7 +8,7 @@ public class Student extends Human {
         this.groupName = groupName;
     }
 
-    public Student(String name, String lastName, String gender, int id, String groupName) {
+    public Student(String name, String lastName, Enum gender, int id, String groupName) {
         super(name, lastName, gender);
         this.id = id;
         this.groupName = groupName;

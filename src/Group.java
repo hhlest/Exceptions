@@ -42,13 +42,14 @@ public class Group {
         throw new StudentsNotFoundException("Student not found by last name.");
     }
 
-    public boolean removeStudentByID(int id) throws Exception {
+    public boolean removeStudentByID(int id) {
         for (int i = 0; i < students.length; i++) {
             if (students[i] != null && students[i].getId() == id) {
                 students[i] = null;
+                return true;
             }
         }
-        throw new StudentsNotFoundException("Student not found by ID.");
+        return false;
     }
 
     @Override

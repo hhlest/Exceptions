@@ -24,11 +24,8 @@ public class Main {
         }
         System.out.println(g1);
 
-        try {
-            g1.removeStudentByID(1012);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        System.out.println(g1.removeStudentByID(1012)); // False ID doesn't exists
+
         System.out.println(g1);
     }
 }

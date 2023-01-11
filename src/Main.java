@@ -18,7 +18,7 @@ public class Main {
         System.out.println(g1);
 
         try {
-            g1.searchStudentByLastName("Shevchenk").setName("Andrii"); // StudentsNotFoundException check.
+            g1.searchStudentByLastName("Shevchenko").setName("Andrii"); // StudentsNotFoundException check.
         } catch (Exception e) {
             e.printStackTrace();
         }

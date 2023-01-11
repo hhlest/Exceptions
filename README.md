@@ -2,17 +2,17 @@
 
 1) Create a Human class.
 Fields:
-● String name
-● String lastName (last name)
-● Gender gender (gender. Implement with Enum)
+String name,
+String lastName (last name),
+Gender gender (gender. Implement with Enum).
 
 Methods:
 Standard (getters and setters, toString(), etc.)
 
 2) Create a class Student as a subclass of Human.
 Fields:
-● int id (study number)
-● String groupName (name of the group where he studies)
+int id (study number),
+String groupName (name of the group where he studies).
 
 Methods:
 Standard (getters and setters, toString(), etc.)
@@ -21,8 +21,8 @@ Standard (getters and setters, toString(), etc.)
 
 4) Create class Group
 Fields:
-● String groupName (name)
-● Student[] students = new Student[10]; (array of 10 students)
+String groupName (name),
+Student[] students = new Student[10]; (array of 10 students).
 
 Methods:
 Standard (getters and setters, toString(), etc.)

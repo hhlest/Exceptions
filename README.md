@@ -1,6 +1,6 @@
 # Exceptions
 
-Create a Human class.
+A Human class.
 Fields:
 String name,
 String lastName (last name),
@@ -9,7 +9,7 @@ Gender gender (gender. Implement with Enum).
 Methods:
 Standard (getters and setters, toString(), etc.)
 
-Create a class Student as a subclass of Human.
+A class Student as a subclass of Human.
 Fields:
 int id (study number),
 String groupName (name of the group where he studies).
@@ -17,7 +17,7 @@ String groupName (name of the group where he studies).
 Methods:
 Standard (getters and setters, toString(), etc.)
 
-Create classes GroupOverflowException, StudentNotFoundException exceptions (heirs Exception) as custom exceptions.
+Classes GroupOverflowException, StudentNotFoundException exceptions (heirs Exception) as custom exceptions.
 
 Create class Group
 Fields:
